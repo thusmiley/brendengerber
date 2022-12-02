@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-bg.svg"
+    />
+    <meta property="og:title" content="Brenden Gerber" />
+    <meta property="og:description" content="Welcome to My Portfolio Page" />
+    <meta property="og:image" content="./assets/preview-bg.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Brenden Gerber | Portfolio</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="container">
+        <a href="#" class="logo">B. L. Gerber</a>
+        <a href="#contact" class="cta">Contact me</a>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section class="hero container">
+        <div class="hero-content">
+          <h1>Reality lens</h1>
+          <p>
+            Over ten years of experience in various art forms and technologies.
+          </p>
+        </div>
+
+        <!-- Banners -->
+        <div class="hero-banner container">
+          <div class="banner graphic">
+            <p>Writing</p>
+          </div>
+          <div class="banner uiux">
+            <p>Print making</p>
+          </div>
+          <div class="banner apps">
+            <p>Wood working</p>
+          </div>
+          <div class="banner photography">
+            <p>Photography</p>
+          </div>
+          <div class="banner illustrations">
+            <p>Martial Art</p>
+          </div>
+          <div class="banner motion">
+            <p>Backend Development</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Intro       -->
+      <section class="intro container">
+        <img src="./assets/profile-pic-bg.jpg" alt="Brenden Gerber" />
+        <div class="intro-content">
+          <h2>Hola, soy Brenden.</h2>
+          <p>
+            I have always been inspired by children for the way their untainted
+            eyes see the world with genuine curiosity and are unaffected by
+            preconceived notions of how things ought to be.
+          </p>
+          <a href="#contact" class="cta">Contact me</a>
+        </div>
+      </section>
+
+      <!-- My work -->
+      <section class="work">
+        <h3>My Work</h3>
+        <p>As a
+            photographer, I try to use this inspiration to find beauty in
+            unusual places that may otherwise go overlooked.</p>
+        <div #swiperRef="" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/slide1.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide2.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide3.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide4.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide5.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide6.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide7.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide8.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide9.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide10.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide11.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide12.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide13.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide14.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide15.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide16.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide17.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide18.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide19.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide20.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide21.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+
+        <div class="swiper-button-prev">
+          <img src="./assets/icon-arrow-left.svg" alt="" />
+        </div>
+        <div class="swiper-button-next">
+          <img src="./assets/icon-arrow-right.svg" alt="" />
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container">
+          <div class="contact-content">
+            <h2>Contact</h2>
+            <p>
+              I would love to hear about your project and how I could help.
+              Please fill in the form, and I’ll get back to you as soon as
+              possible.
+            </p>
+          </div>
+          <div class="contact-form">
+            <form
+              action="./thank-you.html"
+              method="POST"
+              data-netlify="true"
+              name="contact"
+            >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name*"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email*"
+                required
+              />
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Message*"
+                required
+              ></textarea>
+              <input
+                type="submit"
+                id="submit"
+                class="cta"
+                value="Send message"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>Copyright © 2022 B. L. Gerber. All rights reserved.</p>
+        <a href="https://github.com/brendengerber"
+          ><img src="./assets/icon-github.svg" alt=""
+        /></a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
