@@ -20,6 +20,9 @@ body
     color: $gray
     text-align: center
     transition: 1s ease-in
+    position: relative
+    min-height: 100vh
+    
 h1, 
 h2,
 h3
@@ -61,9 +64,14 @@ img
     font-size: 16px
     line-height: 28px
 
-// Header       
+// Header      
+header
+    position: absolute
+    top: 0
+    height: 98px
+    width: 100%
 header .container
-    margin: 34px auto 66px auto
+    margin-top: 34px
     display: flex
     justify-content: space-between
     align-items: center
@@ -77,6 +85,8 @@ header .container
             background-color: $lilac
 
 @media screen and (max-width: 720px)  
+    header
+        height: 64px
     .cta
         font-size: 14px
         line-height: 28px
@@ -86,14 +96,18 @@ header .container
         line-height: 26px        
     header .container
         width: 343px
-        margin: 16px auto 32px auto        
+        margin-top: 16px     
         .logo
             font-size: 20px        
 
-// Hero banner section        
-.hero .hero-content p
-    margin: 23px auto 80px auto
-    max-width: 54ch
+// Hero banner section      
+main
+    padding: 98px 0 128px 0       
+.hero .hero-content 
+    margin-top: 66px
+    p
+        margin: 23px auto 80px auto
+        max-width: 54ch
 
 .hero-banner 
     display: grid
@@ -162,8 +176,13 @@ header .container
         grid-template-columns: repeat(4, 155px)
 
 @media screen and (max-width: 720px)  
-    .hero-content h1
-        font-size: 36px
+    main
+        padding: 64px 0 120px 0       
+
+    .hero .hero-content 
+        margin-top: 32px
+        h1
+            font-size: 36px
     .hero .hero-content p
         margin: 6px auto 32px auto 
     .container
@@ -392,33 +411,36 @@ input:-webkit-autofill:active
 
 // Footer    
 footer
-    margin: 56px 0 64px 0
+    height: 128px
+    position: absolute
+    bottom: 0
+    width: 100%
     .container
         display: flex
         justify-content: space-between
+        align-items: center
+        margin-top: 50px
         p
             font-size: 16px    
 
-@media screen and (max-width: 1150px)
-    footer
-        margin: 56px 0
-
 @media screen and (max-width: 720px)  
     footer
-        margin: 40px 0 32px 0
+        height: 120px
         .container
             flex-direction: column-reverse
             text-align: center
+            margin-top: 30px
             p
                 width: 100%
                 font-size: 14px
-                margin-top: 10px
+                margin-top: 8px
 
 // THANK YOU PAGE
 .thank-you
     text-align: center
-    margin: 100px auto
-    height: 43vh
+    padding: 98px 0 128px 0       
+    h1
+        margin-top: 66px
     p
         margin: 25px  0 50px 0
     .cta
@@ -426,15 +448,12 @@ footer
         &:hover
             background-color: $orange        
 
-@media screen and (max-width: 1150px)   
-    .thank-you
-        height: 44vh
-
 @media screen and (max-width: 720px)  
     .thank-you
-        height: 47vh    
         h1
             font-size: 40px
+            margin-top: 32px
+
         p
             width: 343px
             margin: 10px auto 40px auto
