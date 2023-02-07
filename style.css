@@ -1,16 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Plus+Jakarta+Sans:wght@500;700&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   color: #7a746e;
   text-align: center;
-  -webkit-transition: 1s ease-in;
   transition: 1s ease-in;
   position: relative;
   min-height: 100vh;
@@ -47,7 +45,7 @@ p {
 a {
   text-decoration: none;
   color: #fff7f0;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 img {
@@ -76,27 +74,18 @@ header {
 
 header .container {
   margin-top: 34px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 header .container .logo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #030303;
   font-size: 30px;
 }
-
 header .container .cta {
   background-color: #030303;
 }
-
 header .container .cta:hover {
   background-color: #755cde;
 }
@@ -122,7 +111,6 @@ header .container .cta:hover {
     font-size: 20px;
   }
 }
-
 main {
   padding: 98px 0 128px 0;
 }
@@ -130,22 +118,18 @@ main {
 .hero .hero-content {
   margin-top: 66px;
 }
-
 .hero .hero-content p {
   margin: 23px auto 80px auto;
   max-width: 54ch;
 }
 
 .hero-banner {
-  display: -ms-grid;
   display: grid;
-      grid-template-areas: "g g u a p p" "g g i i m m";
+  grid-template-areas: "g g u a p p" "g g i i m m";
   gap: 24px;
   row-gap: 24px;
-  -ms-grid-rows: (182px)[2];
-      grid-template-rows: repeat(2, 182px);
-  -ms-grid-columns: (164px)[6];
-      grid-template-columns: repeat(6, 164px);
+  grid-template-rows: repeat(2, 182px);
+  grid-template-columns: repeat(6, 164px);
   color: #fff7f0;
   font-size: 24px;
   font-weight: 500;
@@ -153,22 +137,14 @@ main {
 
 .banner {
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .banner p {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   margin: 0 0 24px 24px;
 }
 
 .graphic {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: g;
   background-color: #755cde;
   background-image: url("./assets/pattern-graphic-design.svg");
@@ -177,8 +153,6 @@ main {
 }
 
 .uiux {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: u;
   background-color: #f6a560;
   background-image: url("./assets/pattern-ui-ux.svg");
@@ -187,8 +161,6 @@ main {
 }
 
 .apps {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
   grid-area: a;
   background-color: #f39e9e;
   background-image: url("./assets/pattern-apps.svg");
@@ -197,9 +169,6 @@ main {
 }
 
 .photography {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 2;
   grid-area: p;
   background-color: #61c4b7;
   background-image: url("./assets/pattern-photography.svg");
@@ -208,9 +177,6 @@ main {
 }
 
 .illustrations {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
   grid-area: i;
   background-color: #eb7565;
   background-image: url("./assets/pattern-illustrations.svg");
@@ -219,9 +185,6 @@ main {
 }
 
 .motion {
-  -ms-grid-row: 2;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 2;
   grid-area: m;
   background-color: #552049;
   background-image: url("./assets/pattern-motion-graphics.svg");
@@ -240,14 +203,11 @@ main {
     margin: 10px auto 64px auto;
   }
   .hero-banner {
-        grid-template-areas: "g g u a" "g g i i" "p p m m";
-    -ms-grid-rows: (182px)[3];
-        grid-template-rows: repeat(3, 182px);
-    -ms-grid-columns: (155px)[4];
-        grid-template-columns: repeat(4, 155px);
+    grid-template-areas: "g g u a" "g g i i" "p p m m";
+    grid-template-rows: repeat(3, 182px);
+    grid-template-columns: repeat(4, 155px);
   }
 }
-
 @media screen and (max-width: 720px) {
   main {
     padding: 64px 0 120px 0;
@@ -265,27 +225,17 @@ main {
     width: 343px;
   }
   .hero-banner {
-        grid-template-areas: "g g" "u a" "i i" "p p" "m m";
-    -ms-grid-rows: (182px)[6];
-        grid-template-rows: repeat(6, 182px);
-    -ms-grid-columns: (159px)[2];
-        grid-template-columns: repeat(2, 159px);
+    grid-template-areas: "g g" "u a" "i i" "p p" "m m";
+    grid-template-rows: repeat(6, 182px);
+    grid-template-columns: repeat(2, 159px);
   }
 }
-
 .intro {
   margin: 136px auto 88px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .intro img {
   margin-right: 125px;
 }
@@ -293,15 +243,12 @@ main {
 .intro-content {
   text-align: left;
 }
-
 .intro-content p {
   margin: 34px 0 32px 0;
 }
-
 .intro-content a {
   background-color: #eb7565;
 }
-
 .intro-content a:hover {
   background-color: #f6a560;
 }
@@ -327,13 +274,9 @@ main {
     margin: 27px 0;
   }
 }
-
 @media screen and (max-width: 720px) {
   .intro {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: -100px auto 100px auto;
     width: 343px;
   }
@@ -358,13 +301,11 @@ main {
     line-height: 28px;
   }
 }
-
 .work {
   position: relative;
   padding-bottom: 88px;
   overflow: hidden;
 }
-
 .work p {
   max-width: 40ch;
   margin: 27px auto;
@@ -376,14 +317,8 @@ main {
 }
 
 .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   width: auto;
   height: 360px;
@@ -404,7 +339,6 @@ main {
   border-radius: 100px;
   background-color: #030303;
 }
-
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background-color: #755cde;
@@ -417,11 +351,11 @@ main {
 
 .swiper-button-prev {
   margin-right: 40px;
-  padding: 24px  25px;
+  padding: 24px 25px;
 }
 
 .swiper-button-next {
-  padding: 24px  26px;
+  padding: 24px 26px;
 }
 
 @media screen and (max-width: 720px) {
@@ -436,12 +370,9 @@ main {
     height: 180px;
   }
 }
-
 #contact .container {
   padding: 80px 65px;
   background-color: #030303;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #fff7f0;
   border-radius: 5px;
@@ -459,7 +390,6 @@ main {
   margin-right: 90px;
   text-align: left;
 }
-
 .contact-content h2 {
   margin-bottom: 25px;
   color: #fff7f0;
@@ -467,8 +397,6 @@ main {
 
 .contact-form input,
 textarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin-bottom: 32px;
@@ -476,7 +404,7 @@ textarea {
   border: none;
   border-bottom: 1px solid #fff7f0;
   background-color: rgba(3, 3, 3, 0);
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   color: #fff7f0;
   font-size: 16px;
   line-height: 26px;
@@ -499,7 +427,7 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px #030303 inset !important;
   -webkit-text-fill-color: #fff7f0 !important;
-  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
   background-clip: content-box !important;
 }
 
@@ -514,7 +442,6 @@ input:-webkit-autofill:active {
   border-radius: 50px;
   font-size: 16px;
 }
-
 .contact-form .cta:hover {
   background-color: #f6a560;
 }
@@ -522,22 +449,13 @@ input:-webkit-autofill:active {
 @media screen and (max-width: 1150px) {
   #contact .container {
     padding: 56px 0 64px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .contact-content,
-  .contact-form {
+.contact-form {
     width: 70%;
     text-align: center;
   }
@@ -553,7 +471,6 @@ input:-webkit-autofill:active {
     margin-bottom: 48px;
   }
 }
-
 @media screen and (max-width: 720px) {
   #contact .container {
     padding: 49px 24px;
@@ -571,31 +488,22 @@ input:-webkit-autofill:active {
     line-height: 28px;
   }
   .contact-content,
-  .contact-form {
+.contact-form {
     width: 100%;
   }
 }
-
 footer {
   height: 128px;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-
 footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 50px;
 }
-
 footer .container p {
   font-size: 16px;
 }
@@ -605,10 +513,7 @@ footer .container p {
     height: 120px;
   }
   footer .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     text-align: center;
     margin-top: 30px;
   }
@@ -618,24 +523,19 @@ footer .container p {
     margin-top: 8px;
   }
 }
-
 .thank-you {
   text-align: center;
   padding: 98px 0 128px 0;
 }
-
 .thank-you h1 {
   margin-top: 66px;
 }
-
 .thank-you p {
-  margin: 25px  0 50px 0;
+  margin: 25px 0 50px 0;
 }
-
 .thank-you .cta {
   background-color: #eb7565;
 }
-
 .thank-you .cta:hover {
   background-color: #f6a560;
 }
@@ -649,5 +549,4 @@ footer .container p {
     width: 343px;
     margin: 10px auto 40px auto;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
